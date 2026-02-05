@@ -1,41 +1,39 @@
-# Fernandez Felipe Javier (Android App)
+# Actividad Android - Fernandez Felipe Javier
 
-Proyecto de aplicación Android nativa desarrollado en Kotlin que demuestra una navegación fluida entre múltiples actividades y el paso de datos mediante Intents.
+Este proyecto cumple estrictamente con los requisitos de la actividad de desarrollo de aplicaciones móviles.
 
-## Descripción
+## Requisitos Implementados
 
-Esta aplicación sirve como una demostración práctica de los componentes fundamentales de Android. Implementa un flujo de usuario completo que comienza con una pantalla de inicio de sesión, navega a un menú principal y permite el acceso a pantallas de información, contacto y localización.
+1.  **Activity 1: Login**
+    *   Formulario con dos campos: **Usuario** y **Contraseña**.
+    *   Botón de **"Login"** que valida que los campos no estén vacíos.
+    *   Navegación a la **Activity 2 (Inicio)**, pasando el nombre de usuario como valor mediante un Intent.
+    *   Uso de `inflate` (ViewBinding) para cargar el layout.
 
-## Características
+2.  **Activity 2: Inicio**
+    *   Muestra un mensaje de bienvenida con el **nombre de usuario** recibido desde la Activity 1.
+    *   Tres botones para navegar a las siguientes actividades:
+        *   **Contacto**
+        *   **Sobre Nosotros**
+        *   **Localización**
+    *   Uso de `inflate` para cargar el layout en lugar de `setContentView(R.layout...)`.
 
-*   **Inicio de Sesión (Login):**
-    *   Validación básica de campos (usuario y contraseña no vacíos).
-    *   Navegación segura a la actividad principal tras un inicio de sesión exitoso.
-*   **Gestión de Navegación:**
-    *   Transiciones fluidas entre 5 actividades distintas: `LoginActivity`, `InicioActivity`, `ContactoActivity`, `SobreNosotrosActivity`, y `LocalizacionActivity`.
-*   **Paso de Datos:**
-    *   Demostración del uso de `Intents` para enviar información (como el nombre de usuario) de una actividad a otra.
-*   **UI Moderna:**
-    *   Uso de **ViewBinding** para una interacción eficiente y segura con las vistas XML, eliminando la necesidad de `findViewById`.
+3.  **Activity 3: Contacto**
+    *   Formulario con campos: **Nombre**, **Email**, y **Mensaje**.
+    *   Botón de **"Enviar"**. Al hacer clic, los datos se envían de vuelta a la **Activity 2 (Inicio)**.
+    *   En la Activity 2, se muestran los datos recibidos en un TextView.
+    *   Implementación de `inflate` para cargar el diseño.
 
-## Tecnologías Utilizadas
+4.  **Activity 4: Sobre Nosotros**
+    *   Pantalla sencilla con información estática sobre la aplicación/equipo.
+    *   Carga del layout usando `inflate`.
 
-*   **Lenguaje:** Kotlin
-*   **SDK:** Android SDK
-*   **Diseño:** XML Layouts
-*   **Arquitectura:** MVC (Model-View-Controller) patrón estándar de actividades
+5.  **Activity 5: Localización**
+    *   Pantalla que incluye un mensaje estático y una simulación de mapa/ubicación.
+    *   Carga del layout usando `inflate`.
 
-## Instrucciones de Instalación y Uso
+## Instalación
 
-1.  **Clonar el repositorio:**
-    ```bash
-    git clone https://github.com/javierfernandez25/Android
-    ```
-2.  **Abrir en Android Studio:**
-    *   Inicia Android Studio.
-    *   Selecciona "Open an Existing Project".
-    *   Navega hasta la carpeta clonada y selecciónala.
-3.  **Compilar y Ejecutar:**
-    *   Espera a que Gradle sincronice las dependencias.
-    *   Selecciona un emulador o conecta tu dispositivo físico.
-    *   Haz clic en el botón **Run** (triángulo verde).
+```bash
+git clone https://github.com/javierfernandez25/Android
+```
