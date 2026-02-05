@@ -29,7 +29,7 @@ Esta aplicación sirve como una demostración práctica de los componentes funda
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/javierfernandez25/Android
     ```
 2.  **Abrir en Android Studio:**
     *   Inicia Android Studio.
